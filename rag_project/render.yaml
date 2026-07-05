@@ -1,0 +1,34 @@
+services:
+  # Streamlit Frontend
+  - type: web
+    name: smartdocs-frontend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run src/app.py --server.port=$PORT --server.address=0.0.0.0
+    envVars:
+      - key: PORT
+        value: 8501
+      - key: RAG_BACKEND_URL
+        value: https://smartdocs-backend.onrender.com
+    disk:
+      name: data
+      mountPath: /app/data
+      sizeGB: 1
+
+  # Flask Backend
+  - type: web
+    name: smartdocs-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python backend/app.py
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: FLASK_ENV
+        value: production
+    disk:
+      name: data
+      mountPath: /app/data
+      sizeGB: 1

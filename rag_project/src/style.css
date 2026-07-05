@@ -1,0 +1,149 @@
+:root {
+    color-scheme: dark;
+}
+
+.stApp {
+    background: radial-gradient(circle at top left, rgba(45, 212, 191, 0.12), transparent 25%), linear-gradient(135deg, #070b1a 0%, #0f172a 45%, #111827 100%);
+    color: #f8fafc;
+}
+
+.block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.hero-section {
+    padding: 1.5rem 1.75rem;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 40px rgba(2, 8, 23, 0.35);
+    margin-bottom: 1.25rem;
+}
+
+.hero-section h1 {
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.hero-section p {
+    color: #cbd5e1;
+    font-size: 1rem;
+}
+
+.badge {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #38bdf8, #6366f1, #8b5cf6);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.metric-card, .citation-card, .glass-card {
+    background: rgba(15, 23, 42, 0.72);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 8px 30px rgba(2, 8, 23, 0.25);
+    margin-bottom: 0.85rem;
+}
+
+.metric-title {
+    font-size: 0.92rem;
+    color: #94a3b8;
+    margin-bottom: 0.35rem;
+}
+
+.metric-value {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.metric-subtitle {
+    font-size: 0.82rem;
+    color: #38bdf8;
+    margin-top: 0.25rem;
+}
+
+.section-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin: 1rem 0 0.5rem;
+}
+
+.stButton>button {
+    background: linear-gradient(90deg, #14b8a6, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 0.65rem 1rem;
+    font-weight: 700;
+}
+
+.stButton>button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(59, 130, 246, 0.28);
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.8rem 0 1rem;
+}
+
+.brand-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+    font-size: 1.25rem;
+}
+
+.brand-title {
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.brand-subtitle {
+    font-size: 0.78rem;
+    color: #94a3b8;
+}
+
+.sidebar-footer {
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #94a3b8;
+    font-size: 0.8rem;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid;
+    font-weight: 700;
+}
+
+.citation-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.citation-meta, .citation-path {
+    color: #94a3b8;
+    font-size: 0.82rem;
+    margin-top: 0.2rem;
+}

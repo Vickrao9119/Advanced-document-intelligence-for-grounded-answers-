@@ -1,0 +1,169 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Adjust margins for maximum space utilization
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting - compact for one page
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Custom commands - optimized for space
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    \textbf{\Huge \scshape Vikas Kumar} \\ \vspace{1pt}
+       \href{https://wa.me/9119652725?text=Hello%2C%20I%20would%20like%20to%20chat}{\small \raisebox{-0.1\height}\faPhone\ \underline{+91 9119652725} ~}
+    \href{mailto:ac570011@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ac570011@gmail.com}} $|$
+    \href{https://https://www.linkedin.com/in/vikas-kumar-07b63a2b7utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app}{\underline{linkedin}} $|$
+    \href{https://github.com/jarvishiv62}{\underline{github}} $|$
+    \href{https://utkarsh.dev}{\underline{portfolio}} \\
+\end{center}
+
+%-----------SUMMARY-----------
+\section{PROFESSIONAL SUMMARY}
+Full-stack developer skilled in \textbf{ Next.js, React.js, JavaScript, Laravel, and RESTful API development}. Experienced in \textbf{responsive web design, database management}. Strong problem-solving abilities with proven leadership in campus recruitment and innovation-driven initiatives.
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} JavaScript, PHP, Java, HTML5, CSS3, MySQL, TypeScript \\
+     \textbf{Frameworks:} Laravel, Next.js, React.js, Bootstrap, Tailwind CSS\\
+     \textbf{Tools:} Git, GitHub, VS Code, XAMPP, Postman, Trello, Open-AI \\
+     \textbf{Database:} MySQL, PostgreSQL, MongoDB, AWS, Firebase \\
+     \textbf{Core:}  REST APIs, Authentication, MVC, OOP, Problem Solving, Leadership
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{PROFESSIONAL EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { Scyber security Internship, web inter }{Jun 2025 -- Sept 2025}
+      \resumeItemListStart
+        \resumeItem{Developed responsive UIs using HTML5, CSS3, JavaScript ES6, and Bootstrap with cross-browser compatibility.}
+        \resumeItem{Integrated RESTful APIs, implemented authentication, and resolved Laravel backend issues, improving system performance by 20\%.}
+        \resumeItem{Optimized SQL queries and improved data handling, reducing server response times by 15\%.}
+        \resumeItem{Contributed to code reviews, debugging, and unit testing to ensure scalable and maintainable solutions.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{TECHNICAL PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Clearro.com} $|$ \emph{HTML5, Bootstrap, CSS3, JavaScript} }{\href{https://clearro.com}{\underline{Live}}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered SEO-optimized responsive website, achieving a 95+ PageSpeed score.}
+            \resumeItem{Implemented mobile-first design strategy with reusable UI components.}
+            \resumeItem{Enhanced user engagement with interactive JavaScript modules and optimized image loading.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Enterprise Client Application} $|$ \emph{Next.js, React.js, Tailwind CSS}}{ \href{https://clearro.com}{\underline{Github}}}{}
+          \resumeItemListStart
+            \resumeItem{Led frontend development with server-side rendering, dynamic routing, and component-based architecture.}
+            \resumeItem{Optimized application performance with Next.js Image optimization and API integration.}
+            \resumeItem{Implemented state management using React hooks and Context API for scalable code structure.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Full-Stack E-commerce Platform} $|$ \emph{PHP, Laravel, MySQL, Bootstrap}}{ \href{https://github.com/jarvishiv62/bakery-website-clone.git}{\underline{Github}}}{}
+          \resumeItemListStart
+            \resumeItem{Built complete e-commerce solution with Laravel MVC, RESTful APIs with only COD payment gateway.}
+            \resumeItem{Implemented role-based authentication (admin, vendor, customer) and session management.}
+            \resumeItem{Deployed application on AWS with database backup automation and caching for faster performance.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{LEADERSHIP \& EXTRACURRICULAR}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Training \& Placement Coordinator}{March 2025 -- Present}
+      {Training and Placement Cell, Rajkiya Engineering College}{Bijnor, UP}
+      \resumeItemListStart
+        \resumeItem{Coordinated campus recruitment drives for 100+ students with 10+ tech companies, improving placement rate.}
+        \resumeItem{Managed communication between recruiters and students, ensuring smooth onboarding processes.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Startup Coordinator}{Jan 2025 -- Present}
+      {Institute Innovation Council (IIC)}{Bijnor, UP}
+      \resumeItemListStart
+        \resumeItem{Organized entrepreneurship events and supported 10+ student startup initiatives.}
+        \resumeItem{Mentored peers in prototyping, business validation, and pitching strategies.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in Information Technology}{Expected Jun 2026}
+      {Rajkiya Engineering College, Bijnor}{Bijnor, UP}
+    \resumeSubheading
+      {Higher Secondary Education - PCM}{Mar 2021}
+      {R. S. Convent Sainik School}{Varanasi, UP}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{CERTIFICATIONS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Completed:} Prompt Engineering (Udemy), Software Engineering Fundamentals, Git \& GitHub for Developers, \\
+     \textbf \ Responsive Web Design (freeCodeCamp), JavaScript Algorithms \& Data Structures.(Coursera)
+    }}
+ \end{itemize}
+
+\end{document}

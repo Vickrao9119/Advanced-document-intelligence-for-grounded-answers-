@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What does the system do?",
+    "answer": "It retrieves relevant context and generates grounded answers.",
+    "context": "The system ingests documents and retrieves the best matching chunks for a question.",
+    "reference": "The system retrieves relevant context and produces grounded answers."
+  },
+  {
+    "question": "How is confidence estimated?",
+    "answer": "Confidence is derived from retrieval overlap and answer support.",
+    "context": "Confidence is computed from the supporting evidence found in retrieved context.",
+    "reference": "Confidence is based on retrieval overlap and supporting evidence."
+  }
+]
